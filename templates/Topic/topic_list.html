@@ -1,0 +1,12 @@
+<html>
+<body>
+  <h1>Topics</h1>
+  <ul>
+    {% for t in topic_list %}
+        <li>{{ t.topic }}</li>
+        <li>{{ t.published_by.username }}</li>
+        <hr>
+    {% endfor %}
+  </ul>
+</body>
+</html>

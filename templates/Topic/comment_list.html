@@ -1,0 +1,13 @@
+<html>
+<body>
+  <h1>Topics</h1>
+  <ul>
+    {% for c in comment_list %}
+        <li>{{ c.comment }}</li>
+        <li>{{ c.topic.topic }}</li>
+        <li>{{ c.commented_by.username }}</li>
+        <hr>
+    {% endfor %}
+  </ul>
+</body>
+</html>
